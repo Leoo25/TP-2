@@ -15,15 +15,9 @@ public class Main {
         service.processarComentarios();
         List<String> validos = service.getEmailsValidos();
         List<String> invalidos = service.getEmailsInvalidos();
-        System.out.println("=== E-Mails Válidos ===");
-
-        validos.forEach(System.out::println);
-        System.out.println("\n=== E-Mails Inválidos ===");
-        invalidos.forEach(System.out::println);
-
-        System.out.println("\nResumo:");
-        System.out.println("Total de válidos: " + service.countValidos());
-        System.out.println("Total de inválidos: " + service.countInvalidos());
+        
+        System.out.println("Válidos: " + service.countValidos());
+        System.out.println("Inválidos: " + service.countInvalidos());
 
 
     }

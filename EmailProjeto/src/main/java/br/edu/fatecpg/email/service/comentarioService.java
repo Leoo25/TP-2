@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 public class comentarioService {
     private static final String API_URL = "https://jsonplaceholder.typicode.com/comments";
-    private static final String EMAIL_REGEX = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
+    private static final String EMAIL_REGEX = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.com$";
     private final Pattern pattern = Pattern.compile(EMAIL_REGEX);
 
     private List<String> emailsValidos = new ArrayList<>();
