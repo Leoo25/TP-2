@@ -1,25 +1,19 @@
 package br.edu.fatecpg.email.model;
 
 public class Comentario {
-    private int id;
+
     private String name;
     private String email;
-    private String body;
 
-    public Comentario(int id, String name, String email, String body) {
-        this.id = id;
+
+    public Comentario(String name, String email) {
+
         this.name = name;
         this.email = email;
-        this.body = body;
+
     }
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -37,21 +31,13 @@ public class Comentario {
         this.email = email;
     }
 
-    public String getBody() {
-        return body;
-    }
-
-    public void setBody(String body) {
-        this.body = body;
-    }
 
     @Override
     public String toString() {
         return "Comentario{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", email='" + email + '\'' +
-                ", body='" + body + '\'' +
+
                 '}';
     }
 }
